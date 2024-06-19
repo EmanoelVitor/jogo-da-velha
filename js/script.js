@@ -195,7 +195,7 @@ function declareWinner(winner){
     if(winner =='x'){
         scoreboardX.textContent = parseInt(scoreboardX.textContent) + 1;
         msg = "O jogador 1 venceu";
-    } else if(winner == 'y'){
+    } else if(winner == 'o'){
         scoreboardY.textContent = parseInt(scoreboardY.textContent) + 1;
         msg = "O jogador 2 venceu";
     } else{
@@ -215,7 +215,7 @@ function declareWinner(winner){
     player1 = 0;
     player2 = 0;
 
-    //remoce x e o
+    //remove x e o
     let boxesToRemove = document.querySelectorAll(".box div");
 
     for(let i = 0; i < boxesToRemove.length; i++){
